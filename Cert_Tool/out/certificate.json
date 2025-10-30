@@ -1,33 +1,43 @@
 {
   "PersonPerformingSanitization": {
-    "Name": "root",
-    "Title": "System Operator",
-    "Organization": "nepenthe",
-    "Location": "Linux-6.12.43+deb13-amd64-x86_64-with-glibc2.41",
-    "Phone": ""
+    "Name": "Dr. Sarah Chen",
+    "Title": "Senior Data Security Engineer",
+    "Organization": "Enterprise Security Solutions Corp",
+    "Location": "San Francisco, CA",
+    "Phone": "+1-415-555-0123"
   },
   "MediaInformation": {
-    "MakeVendor": "",
-    "Model": "",
-    "SerialNumber": "",
-    "MediaPropertyNumber": "",
-    "MediaType": "usb",
-    "Source": "/dev/sda",
+    "MakeVendor": "Samsung",
+    "Model": "980 PRO 2TB",
+    "SerialNumber": "S6BZNF0T123456A",
+    "MediaPropertyNumber": "NVME-20251030-ENT",
+    "MediaType": "NVME Drive",
+    "Source": "Enterprise Server - /dev/nvme0n1",
     "Classification": "Confidential",
     "DataBackedUp": "Yes"
   },
   "SanitizationDetails": {
-    "MethodType": "Clear",
-    "MethodUsed": "quick",
+    "MethodType": "Purge",
+    "MethodUsed": "NVMe Crypto Erase",
+    "ToolUsed": "Hackman Enterprise NVME Tool v2.0",
+    "VerificationMethod": "Hardware-level Verification",
     "NumberOfPasses": "1",
-    "ToolUsed": "NIST-Aware Wiper v1.0.0",
-    "VerificationMethod": "none",
-    "PostSanitizationClassification": "Failed"
+    "PostSanitizationClassification": "Unclassified"
   },
   "MediaDestination": {
-    "Option": "Destroy",
-    "Details": "Log file: /var/log/NullBytes/wipe_sda_1758266972.log"
+    "Option": "Secure Destruction",
+    "Details": "Sent to certified e-waste destruction facility"
   },
-  "uuid": "f0f06a97-3c84-4889-8f51-bed745c5cc68",
-  "device": "unknown"
+  "EnterpriseMetadata": {
+    "StartTime": "2025-10-30 23:13:14",
+    "EndTime": "2025-10-30 23:13:44",
+    "SectorsWiped": 3907029168,
+    "VerificationHash": "4c7aa009976c88e6",
+    "Interface": "NVMe PCIe 4.0",
+    "ComplianceStandards": [
+      "NIST SP 800-88",
+      "DoD 5220.22-M",
+      "ISO 27001"
+    ]
+  }
 }
