@@ -574,8 +574,8 @@ class WipeApp:
 
         self.root.configure(bg=BG_COLOR)
         self.root.title("NIST-Aware Wiper | NullBytes")
-        self.root.geometry("800x600")
-        self.root.resizable(False, False)
+        self.root.geometry("1200x800")
+        # self.root.resizable(False, False)
         self.root.update_idletasks()
         self.root.wm_aspect(16, 9, 16, 9)
 
@@ -1126,7 +1126,6 @@ class WipeApp:
 
 if __name__=='__main__':
     if not is_root():
-        # use Tkinter to show the error if possible
         try:
             root = tk.Tk()
             root.withdraw()
